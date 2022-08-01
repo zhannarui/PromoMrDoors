@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="header__top-logo">
+                <img src="/img/logo.png" alt="">
+            </div>
+            <div class="header__top-menu">
+                <nav class="menu__nav">
+                    <ul class="menu__nav-list">
+                        <li class="menu__nav-list-links"><a class="menu__nav-list-links-item" href="#classicKitchen">Классика</a></li>
+                        <li class="menu__nav-list-links"><a class="menu__nav-list-links-item" href="#neoKitchen">Неоклассика</a></li>
+                        <li class="menu__nav-list-links"><a class="menu__nav-list-links-item" href="#moderKitchen">Современный стиль</a></li>
+                    </ul>
+                </nav>
+                <a class="btnOrder" href="#orderProject"><button class="header__top-menu-btn fa-solid fa-angle-right">Заказать проект</button></a>
+                <div class="header__phone-box">
+                    <a class="header__phone fa-solid fa-phone" href="tel:88005500945">8-800-550-09-45</a>
+                    <div class="header__phone-text">Звонок по России бесплатный</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="box">
+        <div class="banner"></div>
+        <div class="bannerBox">
+            <div class="bannerBox-img"><img src="/img/banner-header.png" alt=""></div>
+            <div class="bannerBox-formBox">
+                <div class="bannerBox-form-titleBox">
+                    <span class="bannerBox-form-title1">Заполните заявку</span>
+                    <span class="bannerBox-form-title2">на бесплатный дизайн-проект вашей будущей кухни!</span>
+                </div>
+                <form action="" class="bannerBox-form">
+                    <div class="bannerBox-form-name">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="bannerBox-form-phone">
+                        <label for="phone">Телефон</label>
+                        <input type="text" id="phone" placeholder="Ваш номер телефона">
+                    </div>
+                    <script>
+                        function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdownCity");
+console.log(dropdowns);
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+                    </script>
+                    <div class="bannerBox-form-city">
+                        <label for="city">Город</label>
+                        <div class="bannerBox-form-city-inputWrapp fa-solid fa-angle-down dropbtn" onclick="myFunction()">
+                            <ul id="myDropdown" class="dropdownCity">
+                                <li><span>Москва</span></li>
+                                <li><span>Санкт-Петербург</span></li>
+                                <li><span>Актау</span></li>
+                                <li><span>Александров</span></li>
+                                <li><span>Альметьевск </span></li>
+                                <li><span>Анапа</span></li>
+                                <li><span>Ангарск</span></li>
+                                <li><span>Арзамас</span></li>
+                                <li><span>Архангельск</span></li>
+                                <li><span>Астрахань</span></li>
+                                <li><span>Атырау</span></li>
+                                <li><span>Балаково </span></li>
+                                <li><span>Балашов</span></li>
+                                <li><span>Белгород</span></li>
+                                <li><span>Бишкек</span></li>
+                                <li><span>Благовещенск </span></li>
+                                <li><span>Борисоглебск</span></li>
+                                <li><span>Братск</span></li>
+                                <li><span>Бугульма</span></li>
+                                <li><span>Видное</span></li>
+                                <li><span>Владивосток</span></li>
+                                <li><span>Владимир</span></li>
+                                <li><span>Волгоград</span></li>
+                                <li><span>Воронеж</span></li>
+                                <li><span>Выкса</span></li>
+                                <li><span>Геленджик</span></li>
+                                <li><span>Дзержинск</span></li>
+                                <li><span>Дмитров</span></li>
+                                <li><span>Дюртюли</span></li>
+                                <li><span>Екатеринбург</span></li>
+                                <li><span>Железнодорожный</span></li>
+                                <li><span>Жуковский</span></li>
+                                <li><span>Зеленоград</span></li>
+                                <li><span>Иваново</span></li>
+                                <li><span>Ижевск</span></li>
+                                <li><span>Иркутск</span></li>
+                                <li><span>Казань</span></li>
+                                <li><span>Калуга</span></li>
+                                <li><span>Камышин</span></li>
+                                <li><span>Караганда</span></li>
+                                <li><span>Киров</span></li>
+                                <li><span>Клин</span></li>
+                                <li><span>Коломна </span></li>
+                                <li><span>Королев</span></li>
+                                <li><span>Красногорск</span></li>
+                                <li><span>Краснодар</span></li>
+                                <li><span>Красноярск</span></li>
+                                <li><span>Кузнецк</span></li>
+                                <li><span>Курган</span></li>
+                                <li><span>Липецк</span></li>
+                                <li><span>Лобня</span></li>
+                                <li><span>Магадан</span></li>
+                                <li><span>Магнитогорск</span></li>
+                                <li><span>Мурманск</span></li>
+                                <li><span>Мытищи</span></li>
+                                <li><span>Набережные Челны</span></li>
+                                <li><span>Наро-Фоминск</span></li>
+                                <li><span>Нерюнгри</span></li>
+                                <li><span>Нижневартовск</span></li>
+                                <li><span>Нижнекамск</span></li>
+                                <li><span>Нижний Новгород</span></li>
+                                <li><span>Нижний Тагил</span></li>
+                                <li><span>Новомосковск</span></li>
+                                <li><span>Новороссийск</span></li>
+                                <li><span>Новосибирск</span></li>
+                                <li><span>Новый Уренгой</span></li>
+                                <li><span>Ноябрьск</span></li>
+                                <li><span>Нур-Султан</span></li>
+                                <li><span>Обнинск</span></li>
+                                <li><span>Одинцово</span></li>
+                                <li><span>Октябрьский (Республика Башкортостан)</span></li>
+                                <li><span>Омск</span></li>
+                                <li><span>Орел</span></li>
+                                <li><span>Оренбург</span></li>
+                                <li><span>Орехово-Зуево</span></li>
+                                <li><span>Пенза</span></li>
+                                <li><span>Пермь</span></li>
+                                <li><span>Петропавловск-Камчатский</span></li>
+                                <li><span>Печора</span></li>
+                                <li><span>Псков</span></li>
+                                <li><span>Пушкино</span></li>
+                                <li><span>Раменское</span></li>
+                                <li><span>Реутов</span></li>
+                                <li><span>Ростов-на-Дону</span></li>
+                                <li><span>Рыбинск</span></li>
+                                <li><span>Рязань</span></li>
+                                <li><span>Салехард</span></li>
+                                <li><span>Самара</span></li>
+                                <li><span>Саранск</span></li>
+                                <li><span>Саратов</span></li>
+                                <li><span>Саров</span></li>
+                                <li><span>Севастополь</span></li>
+                                <li><span>Сергиев Посад</span></li>
+                                <li><span>Серпухов</span></li>
+                                <li><span>Симферополь</span></li>
+                                <li><span>Смоленск </span></li>
+                                <li><span>Сочи</span></li>
+                                <li><span>Ставрополь</span></li>
+                                <li><span>Старый Оскол</span></li>
+                                <li><span>Стерлитамак</span></li>
+                                <li><span>Сургут (Тюменская область)</span></li>
+                                <li><span>Сызрань</span></li>
+                                <li><span>Сыктывкар</span></li>
+                                <li><span>Таганрог</span></li>
+                                <li><span>Тамбов</span></li>
+                                <li><span>Тверь</span></li>
+                                <li><span>Тольятти </span></li>
+                                <li><span>Туапсе</span></li>
+                                <li><span>Тула </span></li>
+                                <li><span>Тюмень</span></li>
+                                <li><span>Улан-Удэ</span></li>
+                                <li><span>Урай</span></li>
+                                <li><span>Уральск</span></li>
+                                <li><span>Уссурийск</span></li>
+                                <li><span>Уфа</span></li>
+                                <li><span>Ухта</span></li>
+                                <li><span>Хабаровск</span></li>
+                                <li><span>Чайковский</span></li>
+                                <li><span>Чебоксары</span></li>
+                                <li><span>Челябинск</span></li>
+                                <li><span>Чехов</span></li>
+                                <li><span>Чита</span></li>
+                                <li><span>Электросталь</span></li>
+                                <li><span>Элиста</span></li>
+                                <li><span>Энгельс</span></li>
+                                <li><span>Южно-Сахалинск</span></li>
+                                <li><span>Ялта</span></li>
+                                <li><span>Ярославль</span></li>
+                            </ul>
+                            <input type="text" id="city" placeholder="Выберите город" class="">
+                        </div>
+                    </div>
+                    <a class="bannerbox-btn-link" href="#orderProject"><button class="bannerBox-form-submitBtn fa-solid fa-arrow-right-long">Оставить заявку</button></a>
+                </form>
+            </div>
+        </div>
+        <section class="section__intro">
+            <div class="section__intro-box">
+                <div class="intro__box-title">
+                    Когда кухня от Mr.Doors
+                </div>
+                <div class="intro__box-text">
+                    <p>Вы получаете изделие высочайшего качества, с продуманной эргономикой.</p>
+                    <p>Дизайнеры подберут вам кухню, которая отвечает всем ваших потребностям.</p>
+                    <p>Мы понимаем ваши потребности, и даем профессиональные советы.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section__benefits">
+            <div class="section__benefits-box">
+                <div class="benefits__box-title">Почему нужно заказать кухню в Mr.Doors?</div>
+                <div class="benefits__box-cards">
+                    <div class="benefits__box-cards-item test">
+                        <div class="cards__item-title">Гарантия 12 лет</div>
+                        <p class="cards__item-text">Благодаря гарантированному качеству изделия, даём самую большую
+                            гарантию среди конкурентов</p>
+                    </div>
+                    <div class="benefits__box-cards-item">
+                        <div class="cards__item-title">С 1996г. на рынке</div>
+                        <p class="cards__item-text">Мы изготовили более 900 тысяч кухонь по индивидуальным проектам</p>
+                    </div>
+                    <div class="benefits__box-cards-item test">
+                        <div class="cards__item-title">Экологичность</div>
+                        <p class="cards__item-text">Все комлектующие сертифицированы и безопасны для здоровья</p>
+                    </div>
+                    <div class="benefits__box-cards-item test">
+                        <div class="cards__item-title">Эргономика</div>
+                        <p class="cards__item-text">Продуманная на этапе дизайн проекта эргономика позволяет максимально
+                            комфортно её использовать</p>
+                    </div>
+                    <div class="benefits__box-cards-item test">
+                        <div class="cards__item-title">Качественная фурнитура</div>
+                        <p class="cards__item-text">Европейская фурнитура гарантирует более 100 тысяч
+                            открываний/закрываний ящиков плавно и бесшумно</p>
+                    </div>
+                    <div class="benefits__box-cards-item test">
+                        <div class="cards__item-title">Рассрочка без переплаты</div>
+                        <p class="cards__item-text">При покупке в кредит мы даем скидку в размере банковских процентов
+                            по кредиту</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="classicKitchen" class="classicKitchen">
+            <div class="classicKitchen__box">
+                <div class="classicKitchen__box-title">Кухни в классическом стиле</div>
+                <div class="classicKitchen__box-line"></div>
+            </div>
+        </div>
+        <div class="classicKitchen-slider swiper">
+            <div class="classicKitchen-slider-wrapper swiper-wrapper">
+                    <div class="classicKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryClassic" href="/img/1.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/1.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Прадо" (арт. 043)</span></div>
+                        </div>
+                    </div>
+                    <div class="classicKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryClassic" href="/img/5.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/5.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Боргезе" (арт. 036)</span></div>
+                        </div>
+                    </div>
+                    <div class="classicKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryClassic" href="/img/3.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/3.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Сомерсет" (арт. 038)</span></div>
+                        </div>
+                    </div>
+                    <div class="classicKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryClassic" href="/img/4.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/4.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Виндзор" (арт. 037)</span></div>
+                        </div>
+                    </div>
+                    <div class="classicKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryClassic" href="/img/2.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/2.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Брера" (арт. 234)</span></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div id="neoKitchen" class="NeoClassicKitchen">
+            <div class="NeoClassicKitchen__box">
+                <div class="NeoClassicKitchen__box-title">Кухни в стиле неоклассика</div>
+                <div class="NeoClassicKitchen__box-line"></div>
+            </div>
+        </div>
+        <div class="NeoClassicKitchen-slider swiper">
+            <div class="NeoClassicKitchen-slider-wrapper swiper-wrapper">
+                    <div class="NeoClassicKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryNeoClassic" href="/img/11.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/11.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Прадо" (арт. 043)</span></div>
+                        </div>
+                    </div>
+                    <div class="NeoClassicKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryNeoClassic" href="/img/12.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/12.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Боргезе" (арт. 036)</span></div>
+                        </div>
+                    </div>
+                    <div class="NeoClassicKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryNeoClassic" href="/img/13.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/13.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Сомерсет" (арт. 038)</span></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div id="moderKitchen" class="ModernKitchen">
+            <div class="ModernKitchen__box">
+                <div class="ModernKitchen__box-title">Кухни в современном стиле</div>
+                <div class="ModernKitchen__box-line"></div>
+            </div>
+        </div>
+        <div class="ModernKitchen-slider swiper">
+            <div class="ModernKitchen-slider-wrapper swiper-wrapper">
+                    <div class="ModernKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryModern" href="/img/21.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/21.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Метрополитан" (арт. 235)</span></div>
+                        </div>
+                    </div>
+                    <div class="ModernKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryModern" href="/img/22.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/22.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Брера" (арт. 234)</span></div>
+                        </div>
+                    </div>
+                    <div class="ModernKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryModern" href="/img/23.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/23.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Брера" (арт. 234)</span></div>
+                        </div>
+                    </div>
+                    <div class="ModernKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryModern" href="/img/24.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/24.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Тейт" (арт. 232)</span></div>
+                        </div>
+                    </div>
+                    <div class="ModernKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryModern" href="/img/25.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/25.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Метрополитан" (арт. 231)</span></div>
+                        </div>
+                    </div>
+                    <div class="ModernKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryModern" href="/img/26.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/26.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Метрополитан" (арт. 230)</span></div>
+                        </div>
+                    </div>
+                    <div class="ModernKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryModern" href="/img/27.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/27.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Метрополитан" (арт. 229)</span></div>
+                        </div>
+                    </div>
+                    <div class="ModernKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryModern" href="/img/28.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/28.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Метрополитан" (арт. 228)</span></div>
+                        </div>
+                    </div>
+                    <div class="ModernKitchen-slider-slide swiper-slide">
+                        <div class="slider__item">
+                            <a class="slider-item__img" data-fancybox="galleryModern" href="/img/29.jpg" data-width="1800" data-height="1200">
+                                <div class="slider__item-overlay">
+                                    <div class="slider__item-overlay-background slider__item-overlay-icon fa-solid fa-search"></div>
+                                </div>
+                                <img src="/img/29.jpg" alt="">
+                            </a>
+                            <div class="slider__item-info">Кухня <span>"Метрополитан" (арт. 227)</span></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <section class="section__getProject">
+            <div class="getProject__container">
+                <div class="getProject__body">
+                    <div class="getProject__body-leftSide">
+                        <div class="getProject-slider swiper">
+                            <div class="getProject-slider-wrapper swiper-wrapper">
+                                    <div class="getProject-slider-slide swiper-slide">
+                                        <div class="getProject-slider__item">
+                                            <a class="getProject-slider-item__img" data-fancybox="gallery" href="/img/1.jpg" data-width="1800" data-height="1200">
+                                                <div class="getProject-slider__item-overlay">
+                                                    <div class="getProject-slider__item-overlay-background getProject-slider__item-overlay-icon fa-solid fa-search"></div>
+                                                </div>
+                                                <img src="/img/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="getProject-slider-slide swiper-slide">
+                                        <div class="getProject-slider__item">
+                                            <a class="getProject-slider-item__img" data-fancybox="gallery" href="/img/5.jpg" data-width="1800" data-height="1200">
+                                                <div class="getProject-slider__item-overlay">
+                                                    <div class="getProject-slider__item-overlay-background getProject-slider__item-overlay-icon fa-solid fa-search"></div>
+                                                </div>
+                                                <img src="/img/5.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="getProject-slider-slide swiper-slide">
+                                        <div class="getProject-slider__item">
+                                            <a class="getProject-slider-item__img" data-fancybox="gallery" href="/img/3.jpg" data-width="1800" data-height="1200">
+                                                <div class="getProject-slider__item-overlay">
+                                                    <div class="getProject-slider__item-overlay-background getProject-slider__item-overlay-icon fa-solid fa-search"></div>
+                                                </div>
+                                                <img src="/img/3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="getProject-slider-slide swiper-slide">
+                                        <div class="getProject-slider__item">
+                                            <a class="getProject-slider-item__img" data-fancybox="gallery" href="/img/4.jpg" data-width="1800" data-height="1200">
+                                                <div class="getProject-slider__item-overlay">
+                                                    <div class="getProject-slider__item-overlay-background getProject-slider__item-overlay-icon fa-solid fa-search"></div>
+                                                </div>
+                                                <img src="/img/4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="getProject-slider-slide swiper-slide">
+                                        <div class="getProject-slider__item">
+                                            <a class="getProject-slider-item__img" data-fancybox="gallery" href="/img/2.jpg" data-width="1800" data-height="1200">
+                                                <div class="getProject-slider__item-overlay">
+                                                    <div class="getProject-slider__item-overlay-background getProject-slider__item-overlay-icon fa-solid fa-search"></div>
+                                                </div>
+                                                <img src="/img/2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="getProject__body-RightSide">
+                        <div class="rightSide-title">Как мне получить дизайн-проект?</div>
+                        <div class="rightSide-subTitle">Очень просто!</div>
+                        <ul class="rightSide-list">
+                            <li class="rightSide-list-item">
+                                <span class="list-item-number">1</span>
+                                Оставьте свои контакты;
+                            </li>
+                            <li class="rightSide-list-item">
+                                <span class="list-item-number">2</span>
+                                Наш дизайнер свяжется с вами, уточнит ваши пожелания и размеры помещения;
+                            </li>
+                            <li class="rightSide-list-item">
+                                <span class="list-item-number">3</span>
+                                Получите ваш дизайн-проект!
+                            </li>
+                        </ul>
+                        <a href="#orderProject" class="rightSide-btn fa-solid fa-arrow-right-long">Получите бесплатный дизайн-проект!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__creation">
+            <div class="section__creation-box">
+                <div class="creation__box-title">Кухня на заказ в Mr.Doors — это просто!</div>
+                <p class="creation__box-subTitle">Изготовление кухни — Просто. Быстро. За 4 шага:</p>
+                <div class="creation__box-cards">
+                    <div class="creation__box-cards-item one">
+                        <div class="cards__item-title">Бесплатный дизайн-проект</div>
+                        <p class="cards__item-text">Дизайнер составит дизайн-проект, учитывая все ваши пожелания</p>
+                    </div>
+                    <div class="creation__box-cards-item two">
+                        <div class="cards__item-title">Бесплатный<br>замер</div>
+                        <p class="cards__item-text">Наши замерщики приедут в удобное для вас время</p>
+                    </div>
+                    <div class="creation__box-cards-item three">
+                        <div class="cards__item-title">Производство<br>кухни</div>
+                        <p class="cards__item-text">После заключения договора дизайн-проект отправляется на производство
+                        </p>
+                    </div>
+                    <div class="creation__box-cards-item four">
+                        <div class="cards__item-title">Доставка<br>и сборка</div>
+                        <p class="cards__item-text">Доставим кухню в удобное для вас время, соберем и подключим технику
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="orderProject" class="section__application">
+            <div class="section__application-box">
+                <div class="application__box-title">Заполни заявку на бесплатный дизайн-проект вашей будущей кухни!
+                </div>
+                <div class="application__box-form">
+                    <form action="" class="application__box-formBody">
+                        <div class="application__box-formBody-item">
+                            <label for="appName">Имя</label>
+                            <input type="text" placeholder="Ваше имя" id="appName">
+                        </div>
+                        <div class="application__box-formBody-item">
+                            <label for="appPhone">Телефон</label>
+                            <input type="text" placeholder="Ваш номер телефона" id="appPhone">
+                        </div>
+                        <script>
+                            function myFunction2() {
+document.getElementById("myDropdown2").classList.toggle("show2");
+}
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn2')) {
+var dropdowns = document.getElementsByClassName("dropdownCity2");
+console.log(dropdowns);
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show2')) {
+openDropdown.classList.remove('show2');
+}
+}
+}
+}
+                        </script>
+                        <div class="application__box-formBody-city application__box-formBody-item">
+                            <label for="appCity">Город</label>
+                            <div class="application__box-formBody-city-inputWrapp fa-solid fa-angle-down dropbtn2" onclick="myFunction2()">
+                                <ul id="myDropdown2" class="dropdownCity2">
+                                    <li><span>Москва</span></li>
+                                    <li><span>Санкт-Петербург</span></li>
+                                    <li><span>Актау</span></li>
+                                    <li><span>Александров</span></li>
+                                    <li><span>Альметьевск </span></li>
+                                    <li><span>Анапа</span></li>
+                                    <li><span>Ангарск</span></li>
+                                    <li><span>Арзамас</span></li>
+                                    <li><span>Архангельск</span></li>
+                                    <li><span>Астрахань</span></li>
+                                    <li><span>Атырау</span></li>
+                                    <li><span>Балаково </span></li>
+                                    <li><span>Балашов</span></li>
+                                    <li><span>Белгород</span></li>
+                                    <li><span>Бишкек</span></li>
+                                    <li><span>Благовещенск </span></li>
+                                    <li><span>Борисоглебск</span></li>
+                                    <li><span>Братск</span></li>
+                                    <li><span>Бугульма</span></li>
+                                    <li><span>Видное</span></li>
+                                    <li><span>Владивосток</span></li>
+                                    <li><span>Владимир</span></li>
+                                    <li><span>Волгоград</span></li>
+                                    <li><span>Воронеж</span></li>
+                                    <li><span>Выкса</span></li>
+                                    <li><span>Геленджик</span></li>
+                                    <li><span>Дзержинск</span></li>
+                                    <li><span>Дмитров</span></li>
+                                    <li><span>Дюртюли</span></li>
+                                    <li><span>Екатеринбург</span></li>
+                                    <li><span>Железнодорожный</span></li>
+                                    <li><span>Жуковский</span></li>
+                                    <li><span>Зеленоград</span></li>
+                                    <li><span>Иваново</span></li>
+                                    <li><span>Ижевск</span></li>
+                                    <li><span>Иркутск</span></li>
+                                    <li><span>Казань</span></li>
+                                    <li><span>Калуга</span></li>
+                                    <li><span>Камышин</span></li>
+                                    <li><span>Караганда</span></li>
+                                    <li><span>Киров</span></li>
+                                    <li><span>Клин</span></li>
+                                    <li><span>Коломна </span></li>
+                                    <li><span>Королев</span></li>
+                                    <li><span>Красногорск</span></li>
+                                    <li><span>Краснодар</span></li>
+                                    <li><span>Красноярск</span></li>
+                                    <li><span>Кузнецк</span></li>
+                                    <li><span>Курган</span></li>
+                                    <li><span>Липецк</span></li>
+                                    <li><span>Лобня</span></li>
+                                    <li><span>Магадан</span></li>
+                                    <li><span>Магнитогорск</span></li>
+                                    <li><span>Мурманск</span></li>
+                                    <li><span>Мытищи</span></li>
+                                    <li><span>Набережные Челны</span></li>
+                                    <li><span>Наро-Фоминск</span></li>
+                                    <li><span>Нерюнгри</span></li>
+                                    <li><span>Нижневартовск</span></li>
+                                    <li><span>Нижнекамск</span></li>
+                                    <li><span>Нижний Новгород</span></li>
+                                    <li><span>Нижний Тагил</span></li>
+                                    <li><span>Новомосковск</span></li>
+                                    <li><span>Новороссийск</span></li>
+                                    <li><span>Новосибирск</span></li>
+                                    <li><span>Новый Уренгой</span></li>
+                                    <li><span>Ноябрьск</span></li>
+                                    <li><span>Нур-Султан</span></li>
+                                    <li><span>Обнинск</span></li>
+                                    <li><span>Одинцово</span></li>
+                                    <li><span>Октябрьский (Республика Башкортостан)</span></li>
+                                    <li><span>Омск</span></li>
+                                    <li><span>Орел</span></li>
+                                    <li><span>Оренбург</span></li>
+                                    <li><span>Орехово-Зуево</span></li>
+                                    <li><span>Пенза</span></li>
+                                    <li><span>Пермь</span></li>
+                                    <li><span>Петропавловск-Камчатский</span></li>
+                                    <li><span>Печора</span></li>
+                                    <li><span>Псков</span></li>
+                                    <li><span>Пушкино</span></li>
+                                    <li><span>Раменское</span></li>
+                                    <li><span>Реутов</span></li>
+                                    <li><span>Ростов-на-Дону</span></li>
+                                    <li><span>Рыбинск</span></li>
+                                    <li><span>Рязань</span></li>
+                                    <li><span>Салехард</span></li>
+                                    <li><span>Самара</span></li>
+                                    <li><span>Саранск</span></li>
+                                    <li><span>Саратов</span></li>
+                                    <li><span>Саров</span></li>
+                                    <li><span>Севастополь</span></li>
+                                    <li><span>Сергиев Посад</span></li>
+                                    <li><span>Серпухов</span></li>
+                                    <li><span>Симферополь</span></li>
+                                    <li><span>Смоленск </span></li>
+                                    <li><span>Сочи</span></li>
+                                    <li><span>Ставрополь</span></li>
+                                    <li><span>Старый Оскол</span></li>
+                                    <li><span>Стерлитамак</span></li>
+                                    <li><span>Сургут (Тюменская область)</span></li>
+                                    <li><span>Сызрань</span></li>
+                                    <li><span>Сыктывкар</span></li>
+                                    <li><span>Таганрог</span></li>
+                                    <li><span>Тамбов</span></li>
+                                    <li><span>Тверь</span></li>
+                                    <li><span>Тольятти </span></li>
+                                    <li><span>Туапсе</span></li>
+                                    <li><span>Тула </span></li>
+                                    <li><span>Тюмень</span></li>
+                                    <li><span>Улан-Удэ</span></li>
+                                    <li><span>Урай</span></li>
+                                    <li><span>Уральск</span></li>
+                                    <li><span>Уссурийск</span></li>
+                                    <li><span>Уфа</span></li>
+                                    <li><span>Ухта</span></li>
+                                    <li><span>Хабаровск</span></li>
+                                    <li><span>Чайковский</span></li>
+                                    <li><span>Чебоксары</span></li>
+                                    <li><span>Челябинск</span></li>
+                                    <li><span>Чехов</span></li>
+                                    <li><span>Чита</span></li>
+                                    <li><span>Электросталь</span></li>
+                                    <li><span>Элиста</span></li>
+                                    <li><span>Энгельс</span></li>
+                                    <li><span>Южно-Сахалинск</span></li>
+                                    <li><span>Ялта</span></li>
+                                    <li><span>Ярославль</span></li>
+                                </ul>
+                                <input type="text" id="appCity" placeholder="Выберите город" class="">
+                            </div>
+                        </div>
+                        <button class="application__box-formBody-button fa-solid fa-arrow-right-long">Заказать
+                            звонок</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery.fancybox.umd.js"></script>
+    <script src="/js/swiper-bundle.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/uikit.js"></script>
+</body>
+
+</html>
