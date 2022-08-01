@@ -45,7 +45,7 @@ html{
     background: #eeeeee;
 }
 .banner{
-    background-image: url('/img/header-img.jpg');
+    background-image: url('../img/header-img.jpg');
     background-position: center center;
     height: 100vh;
     background-size: cover;
